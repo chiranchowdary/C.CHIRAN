@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Management System</title>
+  <link rel="stylesheet" href="StyleMangement.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Student Management System</h1>
+
+    <!-- Form -->
+    <form id="studentForm">
+      <input type="text" id="name" placeholder="Enter Name" required>
+      <input type="number" id="age" placeholder="Enter Age" required>
+      <input type="text" id="course" placeholder="Enter Course" required>
+      <button type="submit">Add Student</button>
+    </form>
+
+    <!-- Search -->
+    <input type="text" id="search" placeholder="Search student...">
+
+    <!-- Table -->
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Course</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="studentTable"></tbody>
+    </table>
+  </div>
+
+  <script src="scriptcode.js"></script>
+</body>
+</html>
