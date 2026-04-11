@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Patient Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<div class="dashboard">
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2>Patients</h2>
+    <p class="active">C Chiran</p>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main">
+
+    <!-- Profile Card -->
+    <div class="card profile">
+      <h2 id="name"></h2>
+      <p><b>ID:</b> <span id="id"></span></p>
+      <p><b>Age:</b> <span id="age"></span></p>
+      <p><b>Gender:</b> <span id="gender"></span></p>
+      <p><b>Phone:</b> <span id="phone"></span></p>
+      <p><b>DOB:</b> <span id="dob"></span></p>
+      <p><b>Address:</b> <span id="address"></span></p>
+    </div>
+
+    <!-- Chart -->
+    <div class="card">
+      <h3>Blood Pressure</h3>
+      <canvas id="chart"></canvas>
+    </div>
+
+    <!-- Lab Results -->
+    <div class="card">
+      <h3>Lab Results</h3>
+      <ul id="labResults"></ul>
+    </div>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
